@@ -12,9 +12,22 @@ namespace InitiereWindowsForms
 {
     public partial class Form1 : Form
     {
+      
         public Form1()
         {
             InitializeComponent();
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            MessageBox.Show("ce mai faci");
+            button1.Text="OK";
+
+        }
+
+        private void Form1_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }
