@@ -1,33 +1,62 @@
 using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
 using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace InitiereWindowsForms
 {
     public partial class Form1 : Form
     {
-      
-        public Form1()
+        Student student = new Student();
+        Student aux = new Student();
+
+        public Form1(Student student)
         {
+            this.student = student;
             InitializeComponent();
         }
 
-        private void button1_Click(object sender, EventArgs e)
+        private void txtEmail_Leave(object sender, EventArgs e)
         {
-            MessageBox.Show("ce mai faci");
-            button1.Text="OK";
-
+            try
+            {
+                aux.Email = txtEmail.Text;
+                txtEmail.BackColor = Color.White;
+            }
+            catch (ArgumentException ex)
+            {
+                txtEmail.BackColor = Color.Red;
+                txtEmail.SelectAll();
+                txtEmail.Focus();
+            }
         }
 
-        private void Form1_Load(object sender, EventArgs e)
+        private void txtVarsta_Leave(object sender, EventArgs e)
         {
+            try
+            {
+                int nr;
+                Int32.TryParse(txtVarsta.Text,out nr);
+                aux.Varsta = nr;
+                txtVarsta.BackColor = Color.White;
+            }
+            catch (ArgumentException ex)
+            {
+                MessageBox.Show(ex.Message);
+                txtVarsta.BackColor = Color.Red;
+                txtVarsta.SelectAll();
+                txtVarsta.Focus();
+            }
+        }
 
+        private void btnClose_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            Close();
+        }
+
+        private void Form1_Enter(object sender, EventArgs e)
+        {
+            student = aux;
+            Close();
         }
     }
 }
