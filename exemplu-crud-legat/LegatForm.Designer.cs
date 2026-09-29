@@ -107,6 +107,7 @@ namespace ExempluCrudLegat
             this.btnStergeP.Click += new System.EventHandler(this.btnStergeP_Click);
 
             this.dgvPlaylists.AllowUserToAddRows = false;
+            this.dgvPlaylists.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.dgvPlaylists.AllowUserToDeleteRows = false;
             this.dgvPlaylists.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgvPlaylists.Location = new System.Drawing.Point(12, 94);
@@ -191,6 +192,7 @@ namespace ExempluCrudLegat
             this.btnStergeM.Click += new System.EventHandler(this.btnStergeM_Click);
 
             this.dgvMelodii.AllowUserToAddRows = false;
+            this.dgvMelodii.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.dgvMelodii.AllowUserToDeleteRows = false;
             this.dgvMelodii.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgvMelodii.Location = new System.Drawing.Point(496, 94);
