@@ -1,6 +1,6 @@
 ﻿namespace InitiereWindowsForms
 {
-    partial class Adapter
+    partial class Ex7
     {
         /// <summary>
         /// Required designer variable.
@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Ex7));
             this.btnColt2 = new System.Windows.Forms.Button();
             this.btnColt1 = new System.Windows.Forms.Button();
             this.textBox1 = new System.Windows.Forms.TextBox();
@@ -35,46 +36,30 @@
             // 
             // btnColt2
             // 
-            this.btnColt2.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
-            this.btnColt2.Location = new System.Drawing.Point(660, 374);
+            resources.ApplyResources(this.btnColt2, "btnColt2");
             this.btnColt2.Name = "btnColt2";
-            this.btnColt2.Size = new System.Drawing.Size(109, 42);
-            this.btnColt2.TabIndex = 0;
-            this.btnColt2.Text = "Colt2";
             this.btnColt2.UseVisualStyleBackColor = true;
             // 
             // btnColt1
             // 
-            this.btnColt1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
-            this.btnColt1.Location = new System.Drawing.Point(-4, 375);
+            resources.ApplyResources(this.btnColt1, "btnColt1");
             this.btnColt1.Name = "btnColt1";
-            this.btnColt1.Size = new System.Drawing.Size(109, 41);
-            this.btnColt1.TabIndex = 1;
-            this.btnColt1.Text = "Colt1";
             this.btnColt1.UseVisualStyleBackColor = true;
             this.btnColt1.Click += new System.EventHandler(this.button1_Click);
             // 
             // textBox1
             // 
-            this.textBox1.Location = new System.Drawing.Point(124, 70);
-            this.textBox1.Multiline = true;
+            resources.ApplyResources(this.textBox1, "textBox1");
             this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(505, 242);
-            this.textBox1.TabIndex = 2;
             // 
             // Adapter
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(96F, 96F);
+            resources.ApplyResources(this, "$this");
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Dpi;
-            this.AutoSize = true;
-            this.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
-            this.ClientSize = new System.Drawing.Size(771, 416);
             this.Controls.Add(this.textBox1);
             this.Controls.Add(this.btnColt1);
             this.Controls.Add(this.btnColt2);
-            this.MaximumSize = new System.Drawing.Size(1000, 1000);
             this.Name = "Adapter";
-            this.Text = "Adapter";
             this.ResumeLayout(false);
             this.PerformLayout();
 

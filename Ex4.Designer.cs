@@ -1,6 +1,6 @@
 namespace InitiereWindowsForms
 {
-    partial class Form1
+    partial class Ex4
     {
         /// <summary>
         /// Required designer variable.
@@ -46,6 +46,7 @@ namespace InitiereWindowsForms
             this.txtNume.Name = "txtNume";
             this.txtNume.Size = new System.Drawing.Size(99, 20);
             this.txtNume.TabIndex = 0;
+            this.txtNume.TextChanged += new System.EventHandler(this.txtNume_TextChanged);
             // 
             // txtPrenume
             // 
@@ -126,7 +127,7 @@ namespace InitiereWindowsForms
             this.btnClose.UseVisualStyleBackColor = true;
             this.btnClose.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.btnClose_KeyPress);
             // 
-            // Form1
+            // Ex4
             // 
             this.ClientSize = new System.Drawing.Size(315, 272);
             this.Controls.Add(this.btnClose);
@@ -139,7 +140,7 @@ namespace InitiereWindowsForms
             this.Controls.Add(this.txtEmail);
             this.Controls.Add(this.txtPrenume);
             this.Controls.Add(this.txtNume);
-            this.Name = "Form1";
+            this.Name = "Ex4";
             this.Enter += new System.EventHandler(this.Form1_Enter);
             this.ResumeLayout(false);
             this.PerformLayout();

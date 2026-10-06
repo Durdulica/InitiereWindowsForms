@@ -4,12 +4,12 @@ using System.Windows.Forms;
 
 namespace InitiereWindowsForms
 {
-    public partial class Form1 : Form
+    public partial class Ex4 : Form
     {
         Student student = new Student();
         Student aux = new Student();
 
-        public Form1(Student student)
+        public Ex4(Student student)
         {
             this.student = student;
             InitializeComponent();
@@ -57,6 +57,11 @@ namespace InitiereWindowsForms
         {
             student = aux;
             Close();
+        }
+
+        private void txtNume_TextChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }

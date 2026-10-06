@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace InitiereWindowsForms
 {
-    public partial class Adapter : Form
+    public partial class Ex7 : Form
     {
-        public Adapter()
+        public Ex7()
         {
             InitializeComponent();
         }

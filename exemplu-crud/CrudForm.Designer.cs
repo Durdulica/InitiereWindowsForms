@@ -64,7 +64,7 @@ namespace ExempluCrud
             this.lblVarsta.AutoSize = true;
             this.lblVarsta.Location = new System.Drawing.Point(12, 105);
             this.lblVarsta.Name = "lblVarsta";
-            this.lblVarsta.Size = new System.Drawing.Size(36, 13);
+            this.lblVarsta.Size = new System.Drawing.Size(37, 13);
             this.lblVarsta.TabIndex = 6;
             this.lblVarsta.Text = "Varsta";
             // 
@@ -159,7 +159,6 @@ namespace ExempluCrud
             this.lblStare.Name = "lblStare";
             this.lblStare.Size = new System.Drawing.Size(0, 13);
             this.lblStare.TabIndex = 13;
-            this.lblStare.Text = "";
             // 
             // CrudForm
             // 
@@ -184,9 +183,11 @@ namespace ExempluCrud
             this.Name = "CrudForm";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Exemplu CRUD - Studenti";
+            this.Load += new System.EventHandler(this.CrudForm_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dgvStudenti)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
+
         }
 
         private System.Windows.Forms.Label lblNume;
